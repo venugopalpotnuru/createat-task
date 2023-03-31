@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: devops13-deploy
-        image: venugopalpotnuru/eks-project:spring-v1
+        image: venugopalpotnuru/eks-project:spring-v2
         ports:
         - containerPort: 8080
