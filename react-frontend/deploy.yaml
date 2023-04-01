@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: devops13-deploy-frontend
-        image: venugopalpotnuru/eks-project:npm
+        image: venugopalpotnuru/eks-project:npm-1
         ports:
         - containerPort: 80

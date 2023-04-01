@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: java-service
+  name: frontend-1-service
 spec:
   type: LoadBalancer
   selector:
-    app: nginx
+    app: reactjs
   ports:
       # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
-    - port: 80
-      targetPort: 8080
+    - port: 90
+      targetPort: 80
       # Optional field
-      # By default and for convenience, the Kubernetes control plane will allocate a port from a range (default: 30000-32767)
+      # By default and for convenience, the Kubernetes control plane will allocate a port from a range (default: 30000-32767
