@@ -5,10 +5,10 @@
 replicaCount: 2
 
 image:
-  repository: nginx
-  pullPolicy: IfNotPresent
+  repository: venugopalpotnuru/eks-project
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "npm"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -37,7 +37,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80
 
 ingress:

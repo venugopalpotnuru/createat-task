@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+  labels:
+    app: reactjs
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: reactjs
+  template:
+    metadata:
+      labels:
+        app: reactjs
+    spec:
+      containers:
+      - name: devops13-deploy-frontend
+        image: venugopalpotnuru/eks-project:npm
+        ports:
+        - containerPort: 80
